@@ -1,3 +1,3 @@
 # Product API
 
-Client side of the Product API.
+Server-side of the Product API.

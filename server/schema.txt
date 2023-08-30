@@ -1,3 +1,0 @@
-The default schema is "test". In order to provide a new schema name, add
-
-DATABASE=DB_URL/<THE_SCHEMA_NAME_YOU_WANT>?retryWrites=true&w=majority

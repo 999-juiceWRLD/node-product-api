@@ -19,7 +19,7 @@ export const Body = () => {
     }, []);
 
     return (
-        <tbody>
+        <tbody style={{ fontSize: "0.7rem" }}>
             {recordArr.map((e, idx) => (
                 <tr key={e._id}>
                     <th scope="row">{idx + 1}</th>

@@ -16,7 +16,7 @@ export const Body = () => {
             .then(dataRes => { return dataRes.data })
             .then((record) => { setRecord(record) })
             .catch(err => { console.log(err) })
-    }, []);
+    }, [recordArr]);
 
     return (
         <tbody style={{ fontSize: "0.7rem" }}>

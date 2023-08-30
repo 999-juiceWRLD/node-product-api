@@ -59,3 +59,21 @@ exports.updateProduct = async (req, res) => {
         res.status(404).json({ message: err.message });
     }
 }
+
+exports.deleteProduct = async (req, res) => {
+    try {
+        const product = await Product.findByIdAndDelete(req.params.id);
+        if (!product) {
+            res.status(404).json({
+                message: "there's no such element. try with another id."
+            })
+        } else {
+            res.status(200).json({
+                message: "element is successfully deleted."
+            })
+        }
+    } catch (err) {
+        console.log(err.message);
+        res.status(404).json({ message: err.message });
+    }
+}

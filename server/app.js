@@ -1,9 +1,11 @@
 const express = require("express")
 const connectDB = require('./server')
 const productRouter = require('./routes/productRoutes')
+const cors = require('cors')
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 const PORT = 3000;
 
 const start = async () => {

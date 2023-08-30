@@ -1,11 +1,13 @@
-const express = require('express');
+const express = require('express')
+const productController = require('../controllers/productController')
 
 const router = express.Router();
+router.use(express.json());
 
 router
     .route('/product')
     .get()
-    .post()
+    .post(productController.postProduct)
 
 router
     .route('/product/:id')

@@ -12,7 +12,7 @@ router
 router
     .route('/product/:id')
     .get(productController.getProduct)
-    .patch()
+    .patch(productController.updateProduct)
     .delete()
 
 module.exports = router;

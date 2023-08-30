@@ -1,23 +1,22 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBar } from './components/NavBar.component'
-import { Table } from './components/api/Table.component'
-
-/*
-name, quantity, price, image (yok denecek kadar az)
-*/
+import { APIBody } from './components/api/APIBody.component'
+import { Routes, Route } from "react-router-dom"
+import { Home } from './components/home/Home.component'
 
 function App() {
 
   return (
-    <div>
-      <NavBar />
-      <div className='container my-3'>
-        <h3 className='mb-4'>Product API</h3>
-        <Table />
-      </div>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<NavBar />}>
+        <Route index={true} path='home' element={<Home />}/>
+        <Route path="api" element={<APIBody />} />
+        <Route path="about" element={<div> <h1>about</h1> </div>} />
+        <Route path="feature" element={<div> <h1>features</h1> </div>} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

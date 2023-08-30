@@ -2,23 +2,35 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
 export const NavBar = () => {
+
+    const headerFont = { 
+        fontSize: "1.25rem",
+        color: "black",
+        textDecoration: "none",
+    };
+
+    const sideFont = {
+        color: "black",
+        textDecoration: "none",
+    }
+
     return (
         <React.Fragment>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="text-decoration-none" to={'/home'}>
-                        <a className="navbar-brand">Home</a>
+                    <Link style={headerFont} to={'/home'}>
+                        Home
                     </Link>
                     <div className="" id="">
-                        <div className="navbar-nav flex flex-row">
-                            <Link className="text-decoration-none" to={'/api'}>
-                                <a className="nav-link active px-3">API</a>
+                        <div className="navbar-nav flex flex-row py-2">
+                            <Link style={sideFont} className="px-3" to={'/api'}>
+                                API
                             </Link>
-                            <Link className="text-decoration-none" to={'/about'}>
-                                <a className="nav-link active px-3">About</a>
+                            <Link style={sideFont} className="px-3" to={'/about'}>
+                                About
                             </Link>
-                            <Link className="text-decoration-none" to={'/feature'}>
-                                <a className="nav-link active px-3" href="#">Features</a>
+                            <Link style={sideFont} className="px-3" to={'/feature'}>
+                                Features
                             </Link>
                         </div>
                     </div>

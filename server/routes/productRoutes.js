@@ -13,6 +13,6 @@ router
     .route('/product/:id')
     .get(productController.getProduct)
     .patch(productController.updateProduct)
-    .delete()
+    .delete(productController.deleteProduct)
 
 module.exports = router;

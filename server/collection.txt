@@ -1,0 +1,3 @@
+The default collection is "test". In order to provide a new collection name, add
+
+DATABASE=DB_URL/<THE_SCHEMA_NAME_YOU_WANT>?retryWrites=true&w=majority

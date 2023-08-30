@@ -4,9 +4,10 @@ export const Head = ({name, quantity, price}) => {
     return (
         <thead>
             <tr>
-                <th>{name}</th>
-                <th>{quantity}</th>
-                <th>{price}</th>
+                <th scope="col">#</th>
+                <th scope="col">{name}</th>
+                <th scope="col">{quantity}</th>
+                <th scope="col">{price}</th>
             </tr>
         </thead>
     );

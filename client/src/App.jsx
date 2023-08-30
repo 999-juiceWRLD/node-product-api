@@ -1,7 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBar } from './components/NavBar.component'
-import { Table } from './components/Table.component'
+import { Table } from './components/api/Table.component'
 
 /*
 name, quantity, price, image (yok denecek kadar az)

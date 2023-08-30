@@ -24,7 +24,9 @@ export const NavBar = () => {
                     </div>
                 </div>
             </nav>
-            <Outlet />
+            <div className="container my-3">
+                <Outlet />
+            </div>
         </React.Fragment>
     );
 }

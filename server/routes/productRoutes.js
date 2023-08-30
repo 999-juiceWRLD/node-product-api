@@ -6,7 +6,7 @@ router.use(express.json());
 
 router
     .route('/product')
-    .get()
+    .get(productController.getAllProducts)
     .post(productController.postProduct)
 
 router

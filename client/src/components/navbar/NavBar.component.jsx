@@ -26,8 +26,8 @@ export const NavBar = () => {
                             <Link style={sideFont} className="px-3" to={'/api'}>
                                 API
                             </Link>
-                            <Link style={sideFont} className="px-3" to={'/about'}>
-                                About
+                            <Link style={sideFont} className="px-3" to={'/api/product'}>
+                                Create
                             </Link>
                             <Link style={sideFont} className="px-3" to={'/feature'}>
                                 Features

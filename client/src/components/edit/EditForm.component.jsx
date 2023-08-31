@@ -31,7 +31,8 @@ export const EditForm = () => {
         await axios.patch(`${url}/product/${id}`, values)
             .then(message => { 
                 if (message.status === 200) {
-                    setSuccess(prev => ( !prev ))
+                    setValues({ name: '', quantity: '', price: '' });
+                    setSuccess(prev => ( !prev ));
                 }})
             .catch(err => { console.log(err) })
     }

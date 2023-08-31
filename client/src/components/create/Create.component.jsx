@@ -37,7 +37,7 @@ export const Create = () => {
             { isSuccess ? (<StatusComp />) : null}
             <form className="mt-2" action="" method="POST" onSubmit={postData}>
                 <div className="mb-3">
-                    <label className="form-label"> Product Name</label>
+                    <label className="form-label">Product Name</label>
                     <input type="text" value={values.name} required className="form-control" id="name" 
                            onChange={setParam('name')}/>
                 </div>

@@ -34,7 +34,7 @@ export const Create = () => {
         <div>
             <h1 className="mt-3 pb-3">Add New Element</h1>
             <h4 className="mb-4">Warning: You have to fill each component below.</h4>
-            { isSuccess ? (<StatusComp />) : null}
+            { isSuccess ? (<StatusComp />) : null }
             <form className="mt-2" action="" method="POST" onSubmit={postData}>
                 <div className="mb-3">
                     <label className="form-label">Product Name</label>

@@ -10,6 +10,12 @@ export const Body = () => {
         setRecordArr(arr);
     }
 
+    const deleteRequest = (element) => {
+        axios.delete(`${baseUrl}/product/${element._id}`)
+            .then(msg => { console.log(msg) })
+            .catch(err => { console.log(err) })
+    }
+
     useEffect(() => {
         axios.get(`${baseUrl}/product`)
             .then(axiRes => { return axiRes.data })
@@ -26,7 +32,7 @@ export const Body = () => {
                     <td>{e.name}</td>
                     <td>{e.quantity}</td>
                     <td>{e.price}$</td>
-                    <td><button type="button" style={{ fontSize: "0.7rem" }} className="btn btn-danger">Delete</button></td>
+                    <td><button type="button" style={{ fontSize: "0.7rem" }} className="btn btn-danger" onClick={() => deleteRequest(e)}>Delete</button></td>
                     <td><button type="button" style={{ fontSize: "0.7rem" }} className="btn btn-warning">Edit</button></td>
                 </tr>
             ))}

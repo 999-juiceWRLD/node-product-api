@@ -1,6 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { NavBar } from './components/NavBar.component'
+import { NavBar } from './components/navbar/NavBar.component'
 import { About } from './components/about/About.component'
 import { APIBody } from './components/api/APIBody.component'
 import { Routes, Route } from "react-router-dom"

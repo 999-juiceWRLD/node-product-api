@@ -23,7 +23,8 @@ export const Create = () => {
             .then(res => { 
                 console.log(res)
                 if (res.status === 200) {
-                    setSuccess(prev => (!prev))
+                    setSuccess(prev => (!prev));
+                    setValues({ name: '', quantity: '', price: '' });
                 }
             })
             .catch(err => { console.log(err)})
@@ -33,8 +34,6 @@ export const Create = () => {
         <div>
             <h1 className="mt-3 pb-3">Add New Element</h1>
             <h4 className="mb-4">Warning: You have to fill each component below.</h4>
-            {/* <StatusComp /> */}
-            {/* {isSuccess ? (<div className="alert alert-sucess" role="alert">Data sent successfuly</div>) : null} */}
             { isSuccess ? (<StatusComp />) : null}
             <form className="mt-2" action="" method="POST" onSubmit={postData}>
                 <div className="mb-3">

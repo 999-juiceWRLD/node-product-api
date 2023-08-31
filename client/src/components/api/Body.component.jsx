@@ -19,13 +19,15 @@ export const Body = () => {
     }, [recordArr]);
 
     return (
-        <tbody style={{ fontSize: "0.7rem" }}>
+        <tbody className="align-middle" style={{ fontSize: "0.7rem" }}>
             {recordArr.map((e, idx) => (
                 <tr key={e._id}>
                     <th scope="row">{idx + 1}</th>
                     <td>{e.name}</td>
                     <td>{e.quantity}</td>
                     <td>{e.price}$</td>
+                    <td><button type="button" style={{ fontSize: "0.7rem" }} className="btn btn-danger">Delete</button></td>
+                    <td><button type="button" style={{ fontSize: "0.7rem" }} className="btn btn-warning">Edit</button></td>
                 </tr>
             ))}
         </tbody>

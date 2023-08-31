@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 
 export const StatusComp = () => {
@@ -8,7 +7,3 @@ export const StatusComp = () => {
         </div>
     );
 }
-
-// StatusComp.propTypes = {
-//     situation: PropTypes.string
-// }

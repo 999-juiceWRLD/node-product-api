@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Body = () => {
 
     const [recordArr, setRecordArr] = useState([]);
-    const baseUrl = 'https://node-product-api-8z95.vercel.app/api';
+    const baseUrl = 'https://node-product-api-server.vercel.app/api';
 
     const setRecord = (arr) => {
         setRecordArr(arr);

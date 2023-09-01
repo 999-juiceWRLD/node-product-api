@@ -6,7 +6,7 @@ export const Create = () => {
     
     const [values, setValues] = useState({ name: '', quantity: '', price: '' })
     const [isSuccess, setSuccess] = useState(false);
-    const url = 'https://node-product-api-8z95.vercel.app/api';
+    const url = 'https://node-product-api-server.vercel.app/api';
 
     const setParam = (name) => {
         // console.log(name);

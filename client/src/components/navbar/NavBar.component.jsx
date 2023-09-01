@@ -29,9 +29,6 @@ export const NavBar = () => {
                             <Link style={sideFont} className="px-3" to={'/api/product'}>
                                 Create
                             </Link>
-                            <Link style={sideFont} className="px-3" to={'/feature'}>
-                                Features
-                            </Link>
                         </div>
                     </div>
                 </div>

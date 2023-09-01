@@ -5,7 +5,13 @@ const cors = require('cors')
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ['https://node-product-api.vercel.app'],
+        methods: ['GET','POST','PUT','PATCH','DELETE'],
+        credentials: false
+    }
+));
 const PORT = 3000;
 
 const start = async () => {

@@ -9,7 +9,7 @@ export const EditForm = () => {
     const [isSuccess, setSuccess] = useState(false);
     const { id } = useParams();
 
-    const url = 'http://localhost:3000/api';
+    const url = 'https://node-product-api-8z95.vercel.app/api';
 
     useEffect(() => {
         axios.get(`${url}/product/${id}`)

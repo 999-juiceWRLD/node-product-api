@@ -18,7 +18,7 @@ export const NavBar = () => {
         <React.Fragment>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link style={headerFont} to={'/home'}>
+                    <Link style={headerFont} to={'/'}>
                         Home
                     </Link>
                     <div className="" id="">

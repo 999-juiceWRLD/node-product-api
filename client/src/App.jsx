@@ -12,7 +12,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<NavBar />}>
-        <Route index={true} path='home' element={<Home />}/>
+        <Route index={true} element={<Home />}/>
         <Route path="api" element={<APIBody />} />
         <Route path="api/edit/:id" element={<EditForm />} />
         <Route path="api/product" element={<Create />} />

@@ -16,7 +16,6 @@ function App() {
         <Route path="api" element={<APIBody />} />
         <Route path="api/edit/:id" element={<EditForm />} />
         <Route path="api/product" element={<Create />} />
-        <Route path="feature" element={<div> <h1>features</h1> </div>} />
       </Route>
     </Routes>
   );

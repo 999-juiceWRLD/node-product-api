@@ -25,6 +25,9 @@ const start = async () => {
 
 start();
 
+app.get('/', (req, res) => {
+    res.send("experimental")
+})
 app.use('/api/', productRouter);
 
 module.exports = app;
